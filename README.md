@@ -1,5 +1,6 @@
 # sap-purchasing-info-record-sql
-sap-purchasing-info-record-sql は、主にエッジアプリケーションにおいて、SAPと連携された購買情報レコードを保存するSQLテーブルを作成するためのレポジトリです。
+sap-purchasing-info-record-sql は、主にエッジアプリケーションにおいて、SAPと連携された購買情報レコードを保存するSQLテーブルを作成するためのレポジトリです。  
+sap-purchasing-info-record-sql は、そのままクラウド環境におけるアプリケーションにも、適用可能です。  
 
 
 ## sqlの設定ファイル

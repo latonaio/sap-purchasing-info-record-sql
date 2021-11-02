@@ -6,7 +6,7 @@ sap-purchasing-info-record-sql は、主にエッジアプリケーションに�
 sap-purchasing-info-record-sql には、sqlの設定ファイルとして以下のsqlファイルが含まれています。  
  
 * sap-purchasing-info-record-sql.sql（SAP 購買情報レコード）
-* sap-purchasing-info-record-sql-pricing-condition.sq）（SAP購買情報レコード-価格条件データ）
+* sap-purchasing-info-record-sql-pricing-condition.sql（SAP購買情報レコード-価格条件データ）
 
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法

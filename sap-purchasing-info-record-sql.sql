@@ -42,4 +42,4 @@ CREATE TABLE `sap-purchasing-info-record`
     `IsMarkedForDeletion_PO_Level` varchar(1) DEFAULT NULL,
     PRIMARY KEY (`PurchasingInfoRecord`),
 ) ENGINE = InnoDB
-  DEFAULT CHARSET = utf8;
+  DEFAULT CHARSET = utf8mb4;

@@ -40,6 +40,6 @@ CREATE TABLE `sap-purchasing-info-record`
     `IsPurOrderAllwdForInbDeliv` varchar(1) DEFAULT NULL,
     `IsOrderAcknRqd`        varchar(1) DEFAULT NULL,
     `IsMarkedForDeletion_PO_Level` varchar(1) DEFAULT NULL,
-    PRIMARY KEY (`PurchasingInfoRecord`),
+    PRIMARY KEY (`PurchasingInfoRecord`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

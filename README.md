@@ -11,8 +11,7 @@ https://api.sap.com/api/OP_API_INFORECORD_PROCESS_SRV_0001/overview
 sap-purchasing-info-record-sql には、sqlの設定ファイルとして以下のsqlファイルが含まれています。  
  
 * sap-purchasing-info-record-sql.sql（SAP 購買情報レコード）
-* sap-purchasing-info-record-sql-pricing-condition.sql（SAP購買情報レコード-価格条件データ）
-
+* sap-purchasing-info-record-sql-pricing-condition.sql（SAP 購買情報レコード - 価格条件データ）
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法
 MySQLのセットアップ / Kubernetesの設定 / 具体的なSQLテーブルの作成方法、については、[mysql-kube](https://github.com/latonaio/mysql-kube)を参照ください。

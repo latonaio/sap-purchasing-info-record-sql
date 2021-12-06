@@ -1,23 +1,13 @@
-CREATE TABLE `sap-purchasing-info-record`
+CREATE TABLE `sap-purchasing-info-record-purchasing-organization-plant-data`
 (
     `PurchasingInfoRecord`  varchar(10) DEFAULT NULL,
     `PurchasingInfoRecordCategory`  varchar(1) DEFAULT NULL,
+    `PurchasingOrganization` varchar(4) DEFAULT NULL,
+    `Plant`                 varchar(4) DEFAULT NULL,
     `Supplier`              varchar(10) DEFAULT NULL,
     `Material`              varchar(40) DEFAULT NULL,
     `MaterialGroup`         varchar(9) DEFAULT NULL,
     `PurgDocOrderQuantityUnit` varchar(3) DEFAULT NULL,
-    `SupplierMaterialNumber` varchar(35) DEFAULT NULL,
-    `SupplierRespSalesPersonName` varchar(30) DEFAULT NULL,
-    `SupplierPhoneNumber`   varchar(16) DEFAULT NULL,
-    `SupplierMaterialGroup` varchar(18) DEFAULT NULL,
-    `IsRegularSupplier`     tinyint(1) DEFAULT NULL,
-    `AvailabilityStartDate` date DEFAULT NULL,
-    `AvailabilityEndDate`   date DEFAULT NULL,
-    `Manufacturer`          varchar(10) DEFAULT NULL,
-    `LastChangeDateTime`    datetime DEFAULT NULL,
-    `IsDeleted_Header`      tinyint(1) DEFAULT NULL,
-    `PurchasingOrganization` varchar(4) DEFAULT NULL,
-    `Plant`                 varchar(4) DEFAULT NULL,
     `PurchasingGroup`       varchar(3) DEFAULT NULL,
     `MinimumPurchaseOrderQuantity` varchar(13) DEFAULT NULL,
     `StandardPurchaseOrderQuantity` varchar(13) DEFAULT NULL,
@@ -39,7 +29,8 @@ CREATE TABLE `sap-purchasing-info-record`
     `IsEvaluatedRcptSettlmtAllowed` tinyint(1) DEFAULT NULL,
     `IsPurOrderAllwdForInbDeliv` tinyint(1) DEFAULT NULL,
     `IsOrderAcknRqd`        tinyint(1) DEFAULT NULL,
-    `IsMarkedForDeletion_PO_Level` tinyint(1) DEFAULT NULL,
-    PRIMARY KEY (`PurchasingInfoRecord`)
+    `IsMarkedForDeletion`   tinyint(1) DEFAULT NULL,
+    PRIMARY KEY (`PurchasingInfoRecord`, `PurchasingOrganization`, `PurchasingInfoRecordCategory`, `Plant`)
+    CONSTRAINT `PurchasingInfoRecord_fk` FOREIGN KEY (`PurchasingInfoRecord`) REFERENCES `sap-purchasing-info-record-general-data` (`PurchasingInfoRecord`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

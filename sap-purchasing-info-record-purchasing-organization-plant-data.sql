@@ -25,7 +25,7 @@ CREATE TABLE `sap-purchasing-info-record-purchasing-organization-plant-data`
     `TaxCode`               varchar(2) DEFAULT NULL,
     `IncotermsClassification` varchar(3) DEFAULT NULL,
     `MaximumOrderQuantity`  varchar(13) DEFAULT NULL,
-    `IsRelevantForAutomSrcg` tinyint(1) DEFAULT NULL,
+    `IsRelevantForAutomSrcg` varchar(1) DEFAULT NULL,
     `IsEvaluatedRcptSettlmtAllowed` tinyint(1) DEFAULT NULL,
     `IsPurOrderAllwdForInbDeliv` tinyint(1) DEFAULT NULL,
     `IsOrderAcknRqd`        tinyint(1) DEFAULT NULL,

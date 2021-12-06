@@ -10,7 +10,8 @@ https://api.sap.com/api/OP_API_INFORECORD_PROCESS_SRV_0001/overview
 ## sqlの設定ファイル
 sap-purchasing-info-record-sql には、sqlの設定ファイルとして以下のsqlファイルが含まれています。  
  
-* sap-purchasing-info-record-sql.sql（SAP 購買情報レコード）
+* sap-purchasing-info-record-general-data.sql（SAP 購買情報レコード - 一般データ）  
+* sap-purchasing-info-record-purchasing-organization-plant-data.sql（SAP 購買情報レコード - 購買組織プラントデータ）
 * sap-purchasing-info-record-sql-pricing-condition.sql（SAP 購買情報レコード - 価格条件データ）
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法

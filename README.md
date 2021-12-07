@@ -3,7 +3,8 @@ sap-purchasing-info-record-sql は、主にエッジアプリケーションに�
 sap-purchasing-info-record-sql は、そのままクラウド環境におけるアプリケーションにも、適用可能です。  
 
 ## 前提条件  
-sap-purchasing-info-record-sql は、SQL の SAP とのデータ連携にあたり、オンプレミス版である（＝クラウド版ではない）SAPS4HANA API の利用を前提としています。クラウド版APIを利用する場合は、ご注意ください。  
+sap-purchasing-info-record-sql は、SQL の SAP とのデータ連携にあたり、オンプレミス版である（＝クラウド版ではない）SAPS4HANA API の利用を前提としています。  
+クラウド版APIを利用する場合は、ご注意ください。  
 https://api.sap.com/api/OP_API_INFORECORD_PROCESS_SRV_0001/overview  
 本レポジトリ の sql設定ファイルの内容は、上記URL の API 仕様を前提としています。  
 

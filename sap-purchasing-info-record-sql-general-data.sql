@@ -1,6 +1,6 @@
 CREATE TABLE `sap-purchasing-info-record-general-data`
 (
-    `PurchasingInfoRecord`  varchar(10) DEFAULT NULL,
+    `PurchasingInfoRecord`  varchar(10) NOT NULL,
     `Supplier`              varchar(10) DEFAULT NULL,
     `Material`              varchar(40) DEFAULT NULL,
     `MaterialGroup`         varchar(9) DEFAULT NULL,

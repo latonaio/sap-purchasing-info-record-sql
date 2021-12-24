@@ -1,9 +1,9 @@
 CREATE TABLE `sap-purchasing-info-record-purchasing-organization-plant-data`
 (
-    `PurchasingInfoRecord`  varchar(10) DEFAULT NULL,
-    `PurchasingInfoRecordCategory`  varchar(1) DEFAULT NULL,
-    `PurchasingOrganization` varchar(4) DEFAULT NULL,
-    `Plant`                 varchar(4) DEFAULT NULL,
+    `PurchasingInfoRecord`  varchar(10) NOT NULL,
+    `PurchasingInfoRecordCategory`  varchar(1) NOT NULL,
+    `PurchasingOrganization` varchar(4) NOT NULL,
+    `Plant`                 varchar(4) NOT NULL,
     `Supplier`              varchar(10) DEFAULT NULL,
     `Material`              varchar(40) DEFAULT NULL,
     `MaterialGroup`         varchar(9) DEFAULT NULL,
@@ -30,7 +30,7 @@ CREATE TABLE `sap-purchasing-info-record-purchasing-organization-plant-data`
     `IsPurOrderAllwdForInbDeliv` tinyint(1) DEFAULT NULL,
     `IsOrderAcknRqd`        tinyint(1) DEFAULT NULL,
     `IsMarkedForDeletion`   tinyint(1) DEFAULT NULL,
-    PRIMARY KEY (`PurchasingInfoRecord`, `PurchasingOrganization`, `PurchasingInfoRecordCategory`, `Plant`)
+    PRIMARY KEY (`PurchasingInfoRecord`, `PurchasingInfoRecordCategory`, `PurchasingOrganization`, `Plant`)
     CONSTRAINT `PurchasingInfoRecord_fk` FOREIGN KEY (`PurchasingInfoRecord`) REFERENCES `sap-purchasing-info-record-general-data` (`PurchasingInfoRecord`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

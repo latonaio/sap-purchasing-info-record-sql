@@ -1,4 +1,4 @@
-CREATE TABLE `sap-purchasing-info-record-purchasing-organization-plant-data`
+CREATE TABLE `sap_purchasing_info_record_purchasing_organization_plant_data`
 (
     `PurchasingInfoRecord`  varchar(10) NOT NULL,
     `PurchasingInfoRecordCategory`  varchar(1) NOT NULL,
@@ -31,6 +31,6 @@ CREATE TABLE `sap-purchasing-info-record-purchasing-organization-plant-data`
     `IsOrderAcknRqd`        tinyint(1) DEFAULT NULL,
     `IsMarkedForDeletion`   tinyint(1) DEFAULT NULL,
     PRIMARY KEY (`PurchasingInfoRecord`, `PurchasingInfoRecordCategory`, `PurchasingOrganization`, `Plant`)
-    CONSTRAINT `PurchasingInfoRecord_fk` FOREIGN KEY (`PurchasingInfoRecord`) REFERENCES `sap-purchasing-info-record-general-data` (`PurchasingInfoRecord`)
+    CONSTRAINT `SAPPurchasingInfoRecordPurchasingOrganizationPlantData_fk` FOREIGN KEY (`PurchasingInfoRecord`) REFERENCES `sap_purchasing_info_record_general_data` (`PurchasingInfoRecord`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

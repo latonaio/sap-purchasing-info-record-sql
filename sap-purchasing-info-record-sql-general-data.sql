@@ -1,4 +1,4 @@
-CREATE TABLE `sap-purchasing-info-record-general-data`
+CREATE TABLE `sap_purchasing_info_record_general_data`
 (
     `PurchasingInfoRecord`  varchar(10) NOT NULL,
     `Supplier`              varchar(10) DEFAULT NULL,
@@ -10,10 +10,10 @@ CREATE TABLE `sap-purchasing-info-record-general-data`
     `SupplierPhoneNumber`   varchar(16) DEFAULT NULL,
     `SupplierMaterialGroup` varchar(18) DEFAULT NULL,
     `IsRegularSupplier`     tinyint(1) DEFAULT NULL,
-    `AvailabilityStartDate` date DEFAULT NULL,
-    `AvailabilityEndDate`   date DEFAULT NULL,
+    `AvailabilityStartDate` varchar(80) DEFAULT NULL,
+    `AvailabilityEndDate`   varchar(80) DEFAULT NULL,
     `Manufacturer`          varchar(10) DEFAULT NULL,
-    `CreationDate`          date DEFAULT NULL,
+    `CreationDate`          varchar(80) DEFAULT NULL,
     `PurchasingInfoRecordDesc` varchar(40) DEFAULT NULL,
     `LastChangeDateTime`    datetime DEFAULT NULL,
     `IsDeleted`             tinyint(1) DEFAULT NULL,

@@ -13,7 +13,9 @@ sap-purchasing-info-record-sql には、sqlの設定ファイルとして以下�
  
 * sap-purchasing-info-record-general-data.sql（SAP 購買情報レコード - 一般データ）  
 * sap-purchasing-info-record-purchasing-organization-plant-data.sql（SAP 購買情報レコード - 購買組織プラントデータ）
-* sap-purchasing-info-record-sql-pricing-condition.sql（SAP 購買情報レコード - 価格条件データ）
+* sap-purchasing-info-record-sql-pricing-condition-data.sql（SAP 購買情報レコード - 価格条件データ）
+* sap-purchasing-info-record-sql-pricing-condition-validity-data.sql（SAP 購買情報レコード - 存在性データ）
+
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法
 MySQLのセットアップ / Kubernetesの設定 / 具体的なSQLテーブルの作成方法、については、[mysql-kube](https://github.com/latonaio/mysql-kube)を参照ください。

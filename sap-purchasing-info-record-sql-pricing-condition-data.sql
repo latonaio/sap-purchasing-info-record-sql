@@ -1,4 +1,4 @@
-CREATE TABLE `sap_purchasing_info_record_pricing_condition`
+CREATE TABLE `sap_purchasing_info_record_pricing_condition_data`
 (
     `PurchasingInfoRecord`  varchar(10) NOT NULL,
     `ConditionRecord`       varchar(10) NOT NULL,

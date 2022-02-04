@@ -9,7 +9,6 @@ CREATE TABLE `sap_purchasing_info_record_pricing_condition_validity_data`
 	`PurgDocOrderQuantityUnit`       varchar(3) DEFAULT NULL, 
 	`PurchasingOrganization`         varchar(4) DEFAULT NULL,
 	`PurchasingInfoRecordCategory`   varchar(1) DEFAULT NULL,   
-	`PurchasingInfoRecord`           varchar(10) DEFAULT NULL, 
 	`Supplier`                       varchar(10) DEFAULT NULL, 
 	`MaterialGroup`                  varchar(9) DEFAULT NULL,  
 	`Material`                       varchar(40) DEFAULT NULL,          
